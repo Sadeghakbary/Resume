@@ -1,16 +1,16 @@
-import Typography from "bootstrap"
-
+import { Typography } from "@mui/material";
 
 export default function Information() {
-    
-    return(
-        <>
-        <Typography variant = "h1">
-            <h1>Resume</h1>
-            <p>نام :صادق</p>
-            <p>نام اکبری :صادق</p>
-            <p>سن :صادق</p>
-        </Typography >
-        </>
-    )
+  
+    console.log('shod');
+    return (
+    <>
+      <Typography variant="h3" component="h2">
+        Welcome to part of my life
+      </Typography>
+       <image src ="src/assets/OIP.jpg" ></image>
+        
+      
+    </>
+  );
 }

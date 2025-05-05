@@ -1,14 +1,16 @@
-import Navbars from './componants/navbar'
-import './App.css'
-import Information from './pages/home';
-import 'bootstrap/dist/css/bootstrap.min.css';  
-export default function App() {
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import AppRoutes from "./Routes";
+
+function App() {
   return (
     <>
-        <Navbars/>
-        <Information/>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
- App
+export default App ;
